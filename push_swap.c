@@ -6,7 +6,7 @@
 /*   By: lpaixao- <lpaixao-@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 15:00:37 by lpaixao-          #+#    #+#             */
-/*   Updated: 2024/03/27 16:31:34 by lpaixao-         ###   ########.fr       */
+/*   Updated: 2024/03/27 18:03:02 by lpaixao-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ int	main(int argc, char **argv)
 
 	if (argc < 2 || (argc == 2 && !argv[1][0]))
 		return (0);
-/*	else if (argc == 2)
-		argv = my_split(argv[1], ' ');*/
 	stack_a = NULL;
 	stack_b = NULL;
 	if (check_errors(argv) == ERROR)
