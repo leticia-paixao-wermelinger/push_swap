@@ -6,7 +6,7 @@
 /*   By: lpaixao- <lpaixao-@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 11:37:27 by lpaixao-          #+#    #+#             */
-/*   Updated: 2024/03/27 14:37:59 by lpaixao-         ###   ########.fr       */
+/*   Updated: 2024/03/28 14:00:46 by lpaixao-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	sort_3(t_node **a, int size)
 		else
 			sa(a);
 	}
-	else
+	else if (check_sorted(*a) != ORDER)
 	{
 		rra(a);
 		sa(a);
@@ -73,5 +73,6 @@ void	sort_4and5(t_node **a, t_node **b, int size)
 		sb(b);
 	sort_3(a, size);
 	pa(b, a);
-	pa(b, a);
+	if (b != NULL)
+		pa(b, a);
 }

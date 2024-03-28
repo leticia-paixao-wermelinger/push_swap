@@ -6,7 +6,7 @@
 #    By: lpaixao- <lpaixao-@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/15 18:00:56 by lpaixao-          #+#    #+#              #
-#    Updated: 2024/03/27 16:57:05 by lpaixao-         ###   ########.fr        #
+#    Updated: 2024/03/27 19:23:40 by lpaixao-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ OBJS = ${SRCS:.c=.o}
 
 LIBFT = libft/libft.a
 
-NUMBERS = 67483 873 2 -127 -2 115745 -5484 -54 15
+NUMBERS = 5 3 2 4 1 
 
 RAND = 500
 
@@ -46,7 +46,7 @@ RAND = 500
 	$(CC) $(FLAGS) -c $< -o $@
 
 all: $(NAME)
-	@echo "so_long ready to be used"
+	@echo "push_swap ready to be used"
 
 $(LIBFT): 
 	make -s -C libft
