@@ -6,7 +6,7 @@
 /*   By: lpaixao- <lpaixao-@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 11:37:27 by lpaixao-          #+#    #+#             */
-/*   Updated: 2024/03/28 14:00:46 by lpaixao-         ###   ########.fr       */
+/*   Updated: 2024/04/27 19:52:15 by lpaixao-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,23 +56,23 @@ void	sort_4and5(t_node **a, t_node **b, int size)
 	int	n_nodes;
 
 	n_nodes = size;
-	while (n_nodes != 0)
+	while (n_nodes != 0 && size_stack(*a) != 3)
 	{
-		if ((*a)->i == 1 || (*a)->i == 2)
+		if ((*a)->i == 1 || ((*a)->i == 2 && size == 5))
 		{
 			pb(a, b);
 			n_nodes--;
 			continue ;
 		}
-		if (size_stack(*b) == 2)
+		if ((size_stack(*b) == 2 && size == 5) || (size_stack(*b) == 1 && size == 4))
 			break ;
 		ra(a);
 		n_nodes--;
 	}
-	if ((*b)->i == 1)
+	if ((*b)->i == 1 && size == 5)
 		sb(b);
 	sort_3(a, size);
 	pa(b, a);
-	if (b != NULL)
+	if (b != NULL && size == 5)
 		pa(b, a);
 }

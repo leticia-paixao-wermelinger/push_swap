@@ -6,7 +6,7 @@
 /*   By: lpaixao- <lpaixao-@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 15:00:37 by lpaixao-          #+#    #+#             */
-/*   Updated: 2024/03/28 14:00:50 by lpaixao-         ###   ########.fr       */
+/*   Updated: 2024/04/27 19:37:12 by lpaixao-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ int	main(int argc, char **argv)
 		return (ERROR);
 	}
 	sort_stack(&stack_a, &stack_b);
+	print_list(stack_a);
 	free_all(stack_a);
 }

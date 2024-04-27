@@ -6,7 +6,7 @@
 #    By: lpaixao- <lpaixao-@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/15 18:00:56 by lpaixao-          #+#    #+#              #
-#    Updated: 2024/03/27 19:23:40 by lpaixao-         ###   ########.fr        #
+#    Updated: 2024/04/27 19:50:10 by lpaixao-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ OBJS = ${SRCS:.c=.o}
 
 LIBFT = libft/libft.a
 
-NUMBERS = 5 3 2 4 1 
+NUMBERS = 3 1 5 2 
 
 RAND = 500
 
